@@ -1,0 +1,25 @@
+import 'dart:io';
+void pallin(){
+  int a,b,c ,d,e;
+  d=0;
+  print("enter a number here");
+  a=int.parse(stdin.readLineSync()!);
+  c=a;
+  while(c>0){
+    b=c%10;
+    d=b+(d*10);
+    c=(c~/10);
+
+  }
+  print(d);
+  if(d==a){
+    print("pallindrome");
+  }
+  else{
+    print("not pallindrome");
+  }
+}
+void main(){
+  pallin();
+
+}
